@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bar Chart Visualization</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .bar {
+      fill: steelblue;
+    }
+    .bar:hover {
+      fill: orange;
+    }
+    .tick {
+      font-size: 10px;
+    }
+    #tooltip {
+      position: absolute;
+      background-color: white;
+      border: 1px solid black;
+      padding: 5px;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">United States GDP</h1>
+  <div id="chart"></div>
+  <div id="tooltip"></div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
